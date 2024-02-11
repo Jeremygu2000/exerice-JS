@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Demander à l'utilisateur d'entrer un nombre et le sauvegarder dans une variable
+let nombreUtilisateur = prompt("Entrez un nombre :");
+
+// Convertir l'entrée utilisateur en nombre
+nombreUtilisateur = parseFloat(nombreUtilisateur);
+
+// Vérifier si le nombre est pair ou impair
+if (isNaN(nombreUtilisateur)) {
+    console.log("Ce n'est pas un nombre valide.");
+} else {
+    if (nombreUtilisateur % 2 === 0) {
+        console.log(`${nombreUtilisateur} est un nombre pair.`);
+    } else {
+        console.log(`${nombreUtilisateur} est un nombre impair.`);
+    }
+}
+</script>
+
+</body>
+</html>
